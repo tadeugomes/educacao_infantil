@@ -1,91 +1,91 @@
 {
   "m2-abertura": {
-    "hash": "98b8c7f0bfaccc73",
-    "duracao_s": 25.34,
+    "hash": "20ac8ded73e293ef",
+    "duracao_s": 25.3,
     "cenas": 4,
     "voz": "Brian",
     "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
   },
   "m2-sei": {
-    "hash": "159b72bb34af4597",
-    "duracao_s": 7.24,
+    "hash": "e624a4fe9bd6edf7",
+    "duracao_s": 7.19,
     "cenas": 2,
     "voz": "Brian",
     "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
   },
   "m2-explorar": {
-    "hash": "9f89a74a21e9a97b",
-    "duracao_s": 19.33,
+    "hash": "824cbb750894bb6b",
+    "duracao_s": 19.3,
     "cenas": 4,
     "voz": "Brian",
     "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
   },
   "m2-missao": {
-    "hash": "77cddaa6ce1aa860",
-    "duracao_s": 26.98,
+    "hash": "c422d923f63016cc",
+    "duracao_s": 26.94,
     "cenas": 5,
     "voz": "Brian",
     "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
   },
   "m2-aval": {
-    "hash": "606321853392dda9",
-    "duracao_s": 7.34,
+    "hash": "943ba57f5e6c6548",
+    "duracao_s": 7.29,
     "cenas": 2,
     "voz": "Brian",
     "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
   },
   "m2-producao": {
-    "hash": "7e8972197377e04a",
-    "duracao_s": 29.28,
+    "hash": "3dc25fc8ee34f59d",
+    "duracao_s": 29.25,
     "cenas": 5,
     "voz": "Brian",
     "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
   },
   "m2-pares": {
-    "hash": "56eee19d8916cd72",
-    "duracao_s": 8.8,
+    "hash": "94e16e2b6614d54b",
+    "duracao_s": 8.78,
     "cenas": 2,
     "voz": "Brian",
     "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
   },
   "m2-figuras": {
-    "hash": "2dbc187fe602aa43",
-    "duracao_s": 18.26,
+    "hash": "d06310036fbdfcb1",
+    "duracao_s": 18.21,
     "cenas": 4,
     "voz": "Brian",
     "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
   },
   "m2-congruencia": {
-    "hash": "8957d76385315f67",
-    "duracao_s": 12.33,
+    "hash": "9b3002be9fcd94a4",
+    "duracao_s": 12.3,
     "cenas": 3,
     "voz": "Brian",
     "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
   },
   "m2-maquete": {
-    "hash": "435471702bd1e7c3",
-    "duracao_s": 17.24,
+    "hash": "8f8638f66754e7b3",
+    "duracao_s": 17.19,
     "cenas": 4,
     "voz": "Brian",
     "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
   },
   "m2-croqui": {
-    "hash": "282b13d3b3b450c5",
-    "duracao_s": 15.62,
+    "hash": "15f2f0fe6cde735f",
+    "duracao_s": 15.58,
     "cenas": 4,
     "voz": "Brian",
     "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
   },
   "m2-terra": {
-    "hash": "f7fff62c00b21109",
-    "duracao_s": 31.11,
+    "hash": "5dce89bff0e48a5c",
+    "duracao_s": 31.08,
     "cenas": 4,
     "voz": "Brian",
     "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
   },
   "m2-robo": {
-    "hash": "1d1c28aeaf71e964",
-    "duracao_s": 13.22,
+    "hash": "4619e0a54830c4a4",
+    "duracao_s": 13.19,
     "cenas": 3,
     "voz": "Brian",
     "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"

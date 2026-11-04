@@ -16,7 +16,7 @@
   "saida": {
     "pasta": "assets/audio",
     "formato": "mp3",
-    "taxa_kbps": 96,
+    "taxa_kbps": 64,
     "amostragem_hz": 44100,
     "canais": 1
   }
