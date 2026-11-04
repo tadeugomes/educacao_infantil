@@ -1,0 +1,7 @@
+---
+title: "Cobertura da BNCC"
+---
+
+Relatório gerado a cada compilação por `scripts/cobertura.py`. Uma habilidade conta como coberta quando tem ao menos uma atividade de prática (exploração, prática ou missão) e uma de avaliação. Para a compilação falhar quando houver lacunas, defina `BNCC_ESTRITO=1`.
+
+{{< include _cobertura_gerada.md >}}

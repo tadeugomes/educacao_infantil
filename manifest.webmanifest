@@ -1,0 +1,16 @@
+{
+  "name": "Meu Livro do 3º ano",
+  "short_name": "Livro 3º ano",
+  "description": "Livro digital interativo do 3º ano do ensino fundamental, alinhado à BNCC.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fffaf0",
+  "theme_color": "#21409a",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

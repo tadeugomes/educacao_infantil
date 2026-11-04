@@ -1,0 +1,15 @@
+/_site/
+/.quarto/
+professor/_cobertura_gerada.md
+*_files/
+.DS_Store
+
+**/*.quarto_ipynb
+
+# Segredos
+.env
+narracao/_brutos/
+
+# Python
+__pycache__/
+*.pyc

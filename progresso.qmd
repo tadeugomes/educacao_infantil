@@ -1,0 +1,50 @@
+---
+title: "Meu progresso"
+---
+
+O que você já fez fica guardado só neste aparelho. Para mostrar ao professor, escreva seu primeiro nome e toque em **Gerar código**.
+
+```{=html}
+<div class="livro" id="meu-progresso">
+  <div id="resumo"></div>
+  <p><label>Primeiro nome <input id="nome" maxlength="40" style="min-height:48px;font:inherit;border-radius:12px;border:2px solid #c9d3ea;padding:0 10px"></label></p>
+  <div class="opcoes"><button type="button" id="gerar" class="primario">Gerar código</button><button type="button" id="apagar">Apagar meu progresso</button></div>
+  <div id="qr" style="max-width:280px"></div>
+  <textarea id="codigo" readonly rows="4" style="width:100%;font-family:monospace;font-size:.8rem;display:none"></textarea>
+  <p class="retorno" id="aviso" aria-live="polite"></p>
+</div>
+<script type="module">
+  import { progresso } from './assets/js/livro.js';
+  import qrcode from './assets/vendor/qrcode.mjs';
+  const NOMES = { diagnostico: 'O que eu já sei', 'pares-solidos': 'Pares de objetos e sólidos', 'solidos-3d': 'Explorei os 6 sólidos',
+    'figuras-planas': 'Figuras planas', congruencia: 'Figuras que se cobrem', legenda: 'Legenda do croqui',
+    'robo-n1': 'Robô fase 1', 'robo-n2': 'Robô fase 2', 'robo-n3': 'Robô fase 3', 'robo-n4': 'Robô fase 4',
+    missao: 'Missão fora da tela', avaliacao: 'Mostrar o que aprendi', producao: 'Produção final' };
+  function resumo() {
+    const tudo = progresso.tudo();
+    const linhas = Object.entries(tudo).flatMap(([m, ats]) => Object.entries(ats).map(([a, d]) =>
+      `<li>${m.toUpperCase()} · ${NOMES[a] || a}${d.t ? ` (${d.a ?? d.m?.length ?? 0} de ${d.t})` : ''}</li>`));
+    document.getElementById('resumo').innerHTML = linhas.length ? `<ul>${linhas.join('')}</ul>` : '<p>Você ainda não fez nenhuma atividade.</p>';
+  }
+  resumo();
+  document.getElementById('gerar').onclick = () => {
+    const cod = progresso.codigo(document.getElementById('nome').value);
+    const ta = document.getElementById('codigo');
+    ta.value = cod; ta.style.display = 'block';
+    try {
+      const q = qrcode(0, 'L'); q.addData(cod); q.make();
+      document.getElementById('qr').innerHTML = q.createSvgTag({ cellSize: 4, margin: 2, scalable: true });
+    } catch { document.getElementById('qr').textContent = 'Código grande demais para QR. Copie o texto abaixo.'; }
+    document.getElementById('aviso').textContent = 'Mostre o QR ao professor ou copie o texto.';
+  };
+  document.getElementById('apagar').onclick = () => {
+    if (document.getElementById('apagar').dataset.conf !== '1') {
+      document.getElementById('apagar').dataset.conf = '1';
+      document.getElementById('aviso').textContent = 'Toque de novo para confirmar.';
+      return;
+    }
+    progresso.apagar(); resumo();
+    document.getElementById('aviso').textContent = 'Progresso apagado.';
+  };
+</script>
+```

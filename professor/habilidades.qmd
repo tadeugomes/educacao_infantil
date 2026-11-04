@@ -1,0 +1,38 @@
+---
+title: "Habilidades BNCC do 3º ano por módulo"
+---
+
+As 203 habilidades do 3º ano (185 da BNCC de 2017 e 18 do complemento de Computação de 2022), distribuídas em 8 módulos e 3 trilhas. Fonte: `dados/bncc_3ano.csv`, extraído do conjunto bncc-dados (versão dados-2026.07.1), com a página do PDF oficial em cada linha.
+
+## M1 Minha cidade tem história
+{{< habilidades M1 >}}
+
+## M2 Mapas, caminhos e formas
+{{< habilidades M2 >}}
+
+## M3 Bichos do meu lugar
+{{< habilidades M3 >}}
+
+## M4 Sons, luzes, ritmos e versos
+{{< habilidades M4 >}}
+
+## M5 Céu, solo e água
+{{< habilidades M5 >}}
+
+## M6 Do campo à mesa
+{{< habilidades M6 >}}
+
+## M7 Praça, notícia e cidadania digital
+{{< habilidades M7 >}}
+
+## M8 Brincadeiras, palco e celebrações
+{{< habilidades M8 >}}
+
+## T1 Oficina das palavras
+{{< habilidades T1 >}}
+
+## T2 Laboratório dos números
+{{< habilidades T2 >}}
+
+## T3 Ateliê do código
+{{< habilidades T3 >}}

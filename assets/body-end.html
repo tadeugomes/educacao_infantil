@@ -1,0 +1,6 @@
+<script>
+  if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+    navigator.serviceWorker.register(window.LIVRO_BASE + 'sw.js', { scope: window.LIVRO_BASE })
+      .catch(function () {});
+  }
+</script>

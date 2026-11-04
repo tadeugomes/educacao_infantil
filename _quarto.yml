@@ -1,0 +1,36 @@
+project:
+  type: website
+  pre-render: scripts/cobertura.py
+  post-render: scripts/pwa.py
+  resources:
+    # Barra inicial ancora na raiz do projeto (sem ela o Quarto copia também _site/).
+    - /assets/js/**
+    - /assets/vendor/**
+    - /assets/fonts/**
+    - /assets/icons/**
+    - /assets/audio/*.mp3
+    - /games/**
+    - /dados/bncc_3ano.csv
+    - /manifest.webmanifest
+
+profile:
+  default: aluno
+
+lang: pt-BR
+
+website:
+  title: "Meu Livro do 3º ano"
+  favicon: assets/icons/icon-192.png
+  search: false
+  page-navigation: false
+  reader-mode: false
+
+format:
+  html:
+    theme: [default, assets/css/crianca.scss]
+    toc: false
+    anchor-sections: false
+    code-copy: false
+    smooth-scroll: true
+    include-in-header: assets/head.html
+    include-after-body: assets/body-end.html

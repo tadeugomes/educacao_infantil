@@ -1,0 +1,93 @@
+{
+  "m2-abertura": {
+    "hash": "98b8c7f0bfaccc73",
+    "duracao_s": 25.34,
+    "cenas": 4,
+    "voz": "Brian",
+    "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
+  },
+  "m2-sei": {
+    "hash": "159b72bb34af4597",
+    "duracao_s": 7.24,
+    "cenas": 2,
+    "voz": "Brian",
+    "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
+  },
+  "m2-explorar": {
+    "hash": "9f89a74a21e9a97b",
+    "duracao_s": 19.33,
+    "cenas": 4,
+    "voz": "Brian",
+    "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
+  },
+  "m2-missao": {
+    "hash": "77cddaa6ce1aa860",
+    "duracao_s": 26.98,
+    "cenas": 5,
+    "voz": "Brian",
+    "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
+  },
+  "m2-aval": {
+    "hash": "606321853392dda9",
+    "duracao_s": 7.34,
+    "cenas": 2,
+    "voz": "Brian",
+    "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
+  },
+  "m2-producao": {
+    "hash": "7e8972197377e04a",
+    "duracao_s": 29.28,
+    "cenas": 5,
+    "voz": "Brian",
+    "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
+  },
+  "m2-pares": {
+    "hash": "56eee19d8916cd72",
+    "duracao_s": 8.8,
+    "cenas": 2,
+    "voz": "Brian",
+    "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
+  },
+  "m2-figuras": {
+    "hash": "2dbc187fe602aa43",
+    "duracao_s": 18.26,
+    "cenas": 4,
+    "voz": "Brian",
+    "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
+  },
+  "m2-congruencia": {
+    "hash": "8957d76385315f67",
+    "duracao_s": 12.33,
+    "cenas": 3,
+    "voz": "Brian",
+    "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
+  },
+  "m2-maquete": {
+    "hash": "435471702bd1e7c3",
+    "duracao_s": 17.24,
+    "cenas": 4,
+    "voz": "Brian",
+    "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
+  },
+  "m2-croqui": {
+    "hash": "282b13d3b3b450c5",
+    "duracao_s": 15.62,
+    "cenas": 4,
+    "voz": "Brian",
+    "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
+  },
+  "m2-terra": {
+    "hash": "f7fff62c00b21109",
+    "duracao_s": 31.11,
+    "cenas": 4,
+    "voz": "Brian",
+    "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
+  },
+  "m2-robo": {
+    "hash": "1d1c28aeaf71e964",
+    "duracao_s": 13.22,
+    "cenas": 3,
+    "voz": "Brian",
+    "modelo": "fal-ai/elevenlabs/tts/multilingual-v2"
+  }
+}

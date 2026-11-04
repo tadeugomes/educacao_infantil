@@ -1,0 +1,15 @@
+# Versão da criança: site instalável (PWA), sem códigos BNCC na tela.
+project:
+  output-dir: _site/aluno
+  render:
+    - index.qmd
+    - modulos/*.qmd
+    - progresso.qmd
+
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: "Mapa dos mundos"
+      - href: progresso.qmd
+        text: "Meu progresso"

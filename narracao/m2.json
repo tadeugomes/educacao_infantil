@@ -1,0 +1,117 @@
+{
+  "_sobre": "Roteiro de narração do módulo M2. Cada faixa vira um arquivo assets/audio/<id>.mp3 ligado ao botão Ouvir da etapa com data-audio=\"<id>\". Cada item de 'cenas' é gerado separadamente, com a cena anterior e a seguinte como contexto, e as cenas são unidas com 0,7 s de pausa.",
+  "modulo": "m2",
+  "faixas": [
+    {
+      "id": "m2-abertura",
+      "cenas": [
+        "Imagine que um colega novo vai visitar a sua casa. Ele nunca veio ao seu bairro.",
+        "Como você explica a ele o caminho até a sua escola?",
+        "Neste mundo, você vai descobrir que o bairro está cheio de formas: caixas, latas, telhados e bolas.",
+        "Vai ver o bairro de cima, como um passarinho, e de lado, como uma maquete. E vai programar um robô para fazer o caminho."
+      ]
+    },
+    {
+      "id": "m2-sei",
+      "cenas": [
+        "O que eu já sei.",
+        "Responda sem medo de errar. As suas respostas ajudam a saber por onde começar."
+      ]
+    },
+    {
+      "id": "m2-explorar",
+      "cenas": [
+        "Explorar: sólidos que abrem e fecham.",
+        "Escolha um sólido. Gire com o dedo para ver todos os lados.",
+        "Depois, arraste a barra para abrir o sólido. Assim você vê a planificação, que é o molde dele no papel.",
+        "Abra todos os seis. Qual deles não abre? Por quê?"
+      ]
+    },
+    {
+      "id": "m2-pares",
+      "cenas": [
+        "Jogo dos pares: objetos e sólidos.",
+        "Toque num objeto do lado esquerdo. Depois, toque no nome do sólido que ele lembra."
+      ]
+    },
+    {
+      "id": "m2-figuras",
+      "cenas": [
+        "Aprender: figuras planas.",
+        "Quando a gente desenha o contorno de uma face de um sólido, aparece uma figura plana.",
+        "Os lados das figuras podem ser paralelos, como os trilhos de um trem, que nunca se encontram.",
+        "O canto onde dois lados se encontram se chama vértice."
+      ]
+    },
+    {
+      "id": "m2-congruencia",
+      "cenas": [
+        "Figuras que se cobrem.",
+        "Qual peça cobre exatamente a figura amarela, sem sobrar e sem faltar?",
+        "Toque numa peça para colocá-la por cima e veja o que acontece."
+      ]
+    },
+    {
+      "id": "m2-maquete",
+      "cenas": [
+        "Planta e maquete do bairro.",
+        "Este é o bairro do robô em forma de maquete. Toque em vista de cima para ver como ele fica numa planta.",
+        "Depois, volte para a maquete e gire com o dedo.",
+        "O que some quando olhamos de cima? Que sólidos você encontra na maquete?"
+      ]
+    },
+    {
+      "id": "m2-croqui",
+      "cenas": [
+        "O croqui e a legenda.",
+        "Um croqui é um desenho simples do lugar, visto de cima.",
+        "Os símbolos ajudam a entender o desenho. E a legenda explica o que cada símbolo quer dizer.",
+        "Agora, monte a legenda deste croqui."
+      ]
+    },
+    {
+      "id": "m2-terra",
+      "cenas": [
+        "A Terra no papel e na bola.",
+        "A Terra tem formato parecido com o de uma esfera. Por isso, o globo mostra bem o formato do planeta.",
+        "Mas lembra da esfera que não abria? Para desenhar a Terra num mapa de papel, é preciso esticar algumas partes. Por isso, os mapas-múndi deixam alguns lugares maiores do que são.",
+        "Compare um globo, um mapa-múndi e uma foto da Terra tirada do espaço. Em qual deles você vê melhor a água? E o formato redondo?"
+      ]
+    },
+    {
+      "id": "m2-robo",
+      "cenas": [
+        "Praticar: o robô no bairro.",
+        "Monte a lista de comandos e toque em executar.",
+        "Se o robô bater, mude a lista e tente de novo. Quem programa erra muitas vezes antes de acertar."
+      ]
+    },
+    {
+      "id": "m2-missao",
+      "cenas": [
+        "Missão fora da tela. Marque cada parte quando terminar.",
+        "Desmonte uma caixa de papelão e veja a planificação dela.",
+        "Tente embrulhar uma bola com uma folha de papel, sem amassar.",
+        "Com caixas, latas e tampinhas, monte a maquete do caminho de casa até a escola.",
+        "Desenhe o croqui do mesmo caminho, visto de cima, com cores e símbolos. E faça a legenda do seu croqui."
+      ]
+    },
+    {
+      "id": "m2-aval",
+      "cenas": [
+        "Mostrar o que aprendi.",
+        "Agora é com você. Leia cada pergunta com calma e escolha a resposta."
+      ]
+    },
+    {
+      "id": "m2-producao",
+      "cenas": [
+        "Produção final: o caminho até a escola.",
+        "Mostre ao professor o seu croqui, a sua maquete e a lista de comandos para ir de casa até a escola.",
+        "Antes, confira: o croqui mostra o caminho visto de cima? Tem pelo menos três pontos de referência?",
+        "A legenda explica todos os símbolos? Você escreveu os comandos, com as viradas para a direita e para a esquerda?",
+        "E, por último, um colega seguiu os seus comandos e chegou à escola?"
+      ]
+    }
+  ]
+}

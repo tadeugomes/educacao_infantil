@@ -1,0 +1,23 @@
+{
+  "_sobre": "Configuração da narração. Voz escolhida no teste de vozes (arquivo eleven_brian.mp3). Mudar qualquer valor aqui faz o script regerar todos os áudios.",
+  "endpoint": "fal-ai/elevenlabs/tts/multilingual-v2",
+  "voz": {
+    "voice": "Brian",
+    "language_code": "pt",
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "speed": 1
+  },
+  "contexto_vizinho": true,
+  "pausa_inicial_s": 0.6,
+  "pausa_entre_cenas_s": 0.7,
+  "loudness_lufs": -14,
+  "true_peak_db": -1.5,
+  "saida": {
+    "pasta": "assets/audio",
+    "formato": "mp3",
+    "taxa_kbps": 96,
+    "amostragem_hz": 44100,
+    "canais": 1
+  }
+}

@@ -1,0 +1,216 @@
+---
+title: "Mapas, caminhos e formas"
+subtitle: "Mundo 2"
+---
+
+::: {.content-visible when-profile="professor"}
+::: {.callout-note appearance="simple"}
+## Guia do professor
+
+Tempo sugerido: 12 aulas de 50 minutos, em 4 a 5 semanas do 1º bimestre. Cada etapa abaixo tem uma nota com o objetivo e o que observar. As atividades na tela levam de 10 a 20 minutos. O resto do tempo vai para conversa, desenho e as missões fora da tela.
+
+Habilidades do módulo (15):
+
+{{< habilidades M2 >}}
+:::
+:::
+
+::: {.etapa data-audio="m2-abertura"}
+[1. Abertura]{.etapa-rotulo}
+
+Imagine que um colega novo vai visitar a sua casa. Ele nunca veio ao seu bairro. **Como você explica a ele o caminho até a sua escola?**
+
+Neste mundo você vai descobrir que o bairro está cheio de formas: caixas, latas, telhados e bolas. Vai ver o bairro de cima, como um passarinho, e de lado, como uma maquete. E vai programar um robô para fazer o caminho.
+:::
+
+::: {.etapa .atividade data-bncc="EF03MA13 EF03GE06 EF03MA12 EF03CO02" data-tipo="diagnostico" data-audio="m2-sei"}
+[2. O que eu já sei]{.etapa-rotulo}
+
+Responda sem medo de errar. Isso ajuda a saber por onde começar.
+
+::: {#diag-m2}
+:::
+
+::: {.content-visible when-profile="professor"}
+::: {.callout-tip appearance="simple"}
+## Professor
+Quem errar 2 ou mais itens deve fazer a etapa 3 em dupla e com objetos de verdade na mesa (caixas, latas, bola). As respostas ficam no aparelho e aparecem no código de progresso.
+:::
+:::
+:::
+
+::: {.etapa .atividade data-bncc="EF03MA13 EF03MA14" data-tipo="exploracao" data-audio="m2-explorar"}
+[3. Explorar: sólidos que abrem e fecham]{.etapa-rotulo}
+
+Escolha um sólido. Gire com o dedo para ver todos os lados. Depois arraste a barra para **abrir** o sólido e ver a planificação, que é o molde dele no papel.
+
+```{=html}
+<div id="visualizador" class="livro">
+  <div class="opcoes" role="group" aria-label="Escolha o sólido">
+    <button type="button" data-solido="cubo">Cubo</button>
+    <button type="button" data-solido="bloco">Bloco retangular</button>
+    <button type="button" data-solido="piramide">Pirâmide</button>
+    <button type="button" data-solido="cilindro">Cilindro</button>
+    <button type="button" data-solido="cone">Cone</button>
+    <button type="button" data-solido="esfera">Esfera</button>
+  </div>
+  <canvas class="palco3d" aria-label="Sólido em 3D. Arraste para girar."></canvas>
+  <div class="controle">
+    <span>Aberto</span>
+    <input type="range" min="0" max="100" value="100" aria-label="Abrir e fechar o sólido">
+    <span>Fechado</span>
+  </div>
+  <p class="aviso-planificacao"></p>
+  <div class="contagem" aria-live="polite"></div>
+</div>
+```
+
+Abra todos os seis. Qual deles **não** abre? Por quê?
+
+::: {.content-visible when-profile="professor"}
+::: {.callout-tip appearance="simple"}
+## Professor
+Peça que contem faces, vértices e arestas no sólido fechado antes de ler os números na tela. A descoberta de que a esfera não tem planificação volta na etapa 4, quando a turma compara globo e mapa (EF03CI07).
+:::
+:::
+:::
+
+::: {.etapa .atividade data-bncc="EF03MA13" data-tipo="pratica" data-audio="m2-pares"}
+[Jogo dos pares: objetos e sólidos]{.etapa-rotulo}
+
+Toque num objeto da esquerda e depois no nome do sólido que ele lembra.
+
+::: {#pares-solidos}
+:::
+:::
+
+::: {.etapa .atividade data-bncc="EF03MA15 EF03MA21" data-tipo="pratica" data-audio="m2-figuras"}
+[4. Aprender: figuras planas]{.etapa-rotulo}
+
+Quando a gente desenha o contorno de uma face de um sólido, aparece uma **figura plana**. Os lados das figuras podem ser paralelos (como os trilhos de um trem, que nunca se encontram). O canto onde dois lados se encontram se chama **vértice**.
+
+::: {#figuras-planas}
+:::
+:::
+
+::: {.etapa .atividade data-bncc="EF03MA16 EF03MA21" data-tipo="pratica" data-audio="m2-congruencia"}
+[Figuras que se cobrem]{.etapa-rotulo}
+
+::: {#congruencia}
+:::
+:::
+
+::: {.etapa .atividade data-bncc="EF03GE06 EF03MA12 EF03MA13" data-tipo="exploracao" data-audio="m2-maquete"}
+[Planta e maquete do bairro]{.etapa-rotulo}
+
+Este é o bairro do robô em forma de maquete. Toque em **Vista de cima** para ver como ele fica numa planta. Depois volte para a maquete e gire com o dedo.
+
+```{=html}
+<div id="maquete" class="livro">
+  <div class="opcoes" role="group" aria-label="Vista">
+    <button type="button" data-vista="planta">Vista de cima (planta)</button>
+    <button type="button" data-vista="maquete">Maquete</button>
+  </div>
+  <canvas class="palco3d" aria-label="Maquete 3D do bairro"></canvas>
+</div>
+```
+
+O que some quando olhamos de cima? Que sólidos você encontra na maquete (telhado, árvores, prédios)?
+:::
+
+::: {.etapa .atividade data-bncc="EF03GE06 EF03GE07 EF15AR02" data-tipo="pratica" data-audio="m2-croqui"}
+[O croqui e a legenda]{.etapa-rotulo}
+
+Um croqui é um desenho simples do lugar, visto de cima. Os símbolos ajudam a entender o desenho, e a **legenda** explica o que cada símbolo quer dizer. Monte a legenda deste croqui.
+
+::: {#croqui}
+:::
+
+::: {#legenda}
+:::
+:::
+
+::: {.etapa .atividade data-bncc="EF03CI07" data-tipo="pratica" data-audio="m2-terra"}
+[A Terra no papel e na bola]{.etapa-rotulo}
+
+A Terra tem formato parecido com o de uma esfera. Por isso o **globo** mostra bem o formato do planeta. Mas lembra da etapa 3? A esfera não tem planificação. Para desenhar a Terra num mapa de papel, é preciso esticar algumas partes. Por isso os mapas-múndi deixam alguns lugares maiores do que são.
+
+Compare um globo, um mapa-múndi e uma foto da Terra tirada do espaço. Em qual deles você vê melhor a água? E o formato redondo?
+:::
+
+::: {.etapa .atividade data-bncc="EF03MA12 EF03CO02 EF03CO03 EF15CO02 EF15CO04" data-tipo="pratica" data-audio="m2-robo"}
+[5. Praticar: o robô no bairro]{.etapa-rotulo}
+
+Monte a lista de comandos e toque em **Executar**. Se o robô bater, mude a lista e tente de novo. Quem programa erra muitas vezes antes de acertar.
+
+[Gire o celular para jogar com a tela deitada.]{.aviso-girar}
+
+```{=html}
+<iframe class="jogo-frame" src="../games/robo/index.html" title="Jogo do robô no bairro" loading="lazy"></iframe>
+<p id="robo-status" class="retorno certo" aria-live="polite"></p>
+```
+
+::: {.content-visible when-profile="professor"}
+::: {.callout-tip appearance="simple"}
+## Professor
+A fase 3 só pode ser resolvida com o bloco "frente até a parede", que repete um passo até uma condição (EF03CO02). A fase 4 pede decomposição em duas partes (EF03CO03). Antes do tablet, faça a fase 4 no pátio, com uma criança no papel de robô e a turma dando os comandos.
+:::
+:::
+:::
+
+::: {.etapa .atividade data-bncc="EF03MA12 EF03MA14 EF03CI07 EF15AR02 EF15AR04 EF03GE07" data-tipo="missao" data-audio="m2-missao"}
+[6. Missão fora da tela]{.etapa-rotulo}
+
+Marque cada parte quando terminar.
+
+```{=html}
+<ul class="conferir" data-atividade="missao" style="list-style:none;padding:0">
+  <li><label><input type="checkbox"> Desmontei uma caixa de papelão e vi a planificação dela.</label></li>
+  <li><label><input type="checkbox"> Tentei embrulhar uma bola com uma folha de papel, sem amassar.</label></li>
+  <li><label><input type="checkbox"> Com caixas, latas e tampinhas, montei a maquete do caminho de casa até a escola.</label></li>
+  <li><label><input type="checkbox"> Desenhei o croqui do mesmo caminho, visto de cima, com cores e símbolos.</label></li>
+  <li><label><input type="checkbox"> Fiz a legenda do meu croqui.</label></li>
+</ul>
+```
+:::
+
+::: {.etapa .atividade data-bncc="EF03MA12 EF03MA13 EF03MA14 EF03MA15 EF03MA16 EF03MA21 EF03GE06 EF03GE07 EF03CI07 EF03CO03 EF15CO04" data-tipo="avaliacao" data-audio="m2-aval"}
+[7. Mostrar o que aprendi]{.etapa-rotulo}
+
+::: {#aval-m2}
+:::
+:::
+
+::: {.etapa .atividade data-bncc="EF03MA12 EF03GE06 EF03GE07 EF15AR02 EF15AR04 EF03CO02 EF15CO02" data-tipo="avaliacao" data-audio="m2-producao"}
+[Produção final: o caminho até a escola]{.etapa-rotulo}
+
+Mostre ao professor o seu croqui, a sua maquete e a lista de comandos para ir de casa até a escola. Antes, confira:
+
+```{=html}
+<ul class="conferir" data-atividade="producao" style="list-style:none;padding:0">
+  <li><label><input type="checkbox"> Meu croqui mostra o caminho visto de cima.</label></li>
+  <li><label><input type="checkbox"> Meu croqui tem pelo menos 3 pontos de referência (padaria, praça, igreja, árvore grande).</label></li>
+  <li><label><input type="checkbox"> Minha legenda explica todos os símbolos.</label></li>
+  <li><label><input type="checkbox"> Escrevi os comandos do caminho, com as viradas para a direita e para a esquerda.</label></li>
+  <li><label><input type="checkbox"> Um colega seguiu meus comandos e chegou à escola.</label></li>
+</ul>
+```
+
+::: {.content-visible when-profile="professor"}
+::: {.rubrica}
+Rubrica da produção final
+
+| Critério | Iniciando | Em desenvolvimento | Consolidado |
+|---|---|---|---|
+| Representação vista de cima (EF03GE06) | Desenha prédios de frente | Mistura vista de cima e de frente | Todo o croqui está visto de cima |
+| Legenda e símbolos (EF03GE07) | Sem legenda | Legenda incompleta | Todos os símbolos explicados |
+| Trajeto com referências e mudanças de direção (EF03MA12) | Não indica direção | Indica direção sem referências | Usa direita, esquerda e pelo menos 3 referências |
+| Algoritmo do caminho (EF03CO02, EF15CO02) | Comandos soltos, sem ordem | Sequência com um erro que o colega corrige | O colega chega à escola seguindo a lista |
+| Maquete e elementos visuais (EF15AR02, EF15AR04) | Objetos sem relação com o trajeto | Maquete parcial do trajeto | Maquete com o trajeto, uso de cor, forma e espaço |
+:::
+:::
+:::
+
+```{=html}
+<script type="module" src="../assets/js/m2/m2.js"></script>
+```

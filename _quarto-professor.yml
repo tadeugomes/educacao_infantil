@@ -1,0 +1,21 @@
+# Versão do professor: mesmo conteúdo, com códigos BNCC, orientações e rubricas.
+project:
+  output-dir: _site/professor
+  render:
+    - index.qmd
+    - modulos/*.qmd
+    - progresso.qmd
+    - professor/*.qmd
+
+website:
+  title: "Livro do 3º ano · Professor"
+  navbar:
+    left:
+      - href: index.qmd
+        text: "Mapa dos mundos"
+      - href: professor/habilidades.qmd
+        text: "Habilidades BNCC"
+      - href: professor/cobertura.qmd
+        text: "Cobertura"
+      - href: professor/ler-progresso.qmd
+        text: "Ler progresso"

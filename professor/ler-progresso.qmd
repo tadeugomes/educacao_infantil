@@ -1,0 +1,25 @@
+---
+title: "Ler o progresso de uma criança"
+---
+
+Cole o código que a criança gerou em "Meu progresso". Se ela mostrou o QR, leia com a câmera do celular e copie o texto. Nada é enviado pela internet: a leitura acontece neste aparelho.
+
+```{=html}
+<div class="livro">
+  <textarea id="entrada" rows="4" style="width:100%;font-family:monospace" aria-label="Código de progresso"></textarea>
+  <div class="opcoes"><button type="button" id="ler" class="primario">Ler código</button></div>
+  <div id="saida"></div>
+</div>
+<script type="module">
+  import { progresso } from '../assets/js/livro.js';
+  document.getElementById('ler').onclick = () => {
+    const s = document.getElementById('saida');
+    try {
+      const d = progresso.decodificar(document.getElementById('entrada').value);
+      const linhas = Object.entries(d.p || {}).flatMap(([m, ats]) => Object.entries(ats).map(([a, v]) =>
+        `<tr><td>${m.toUpperCase()}</td><td>${a}</td><td>${v.t ? `${v.a ?? v.m?.length ?? 0} de ${v.t}` : (v.ok ? 'feito' : '')}</td><td>${v.d || ''}</td></tr>`));
+      s.innerHTML = `<h3>${d.n || 'Sem nome'}</h3><table class="table"><thead><tr><th>Módulo</th><th>Atividade</th><th>Resultado</th><th>Data</th></tr></thead><tbody>${linhas.join('')}</tbody></table>`;
+    } catch { s.innerHTML = '<p class="retorno errado">Código inválido. Confira se copiou tudo.</p>'; }
+  };
+</script>
+```

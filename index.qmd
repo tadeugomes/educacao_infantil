@@ -1,0 +1,42 @@
+---
+title: "Meu Livro do 3º ano"
+page-layout: full
+---
+
+```{=html}
+<p style="font-size:1.15rem">Escolha um mundo para explorar. Cada mundo tem uma pergunta, jogos, coisas para montar e uma missão fora da tela.</p>
+
+<div class="mundos">
+  <a class="mundo bloqueado" style="background:#8d5a97" aria-disabled="true"><span class="num">1</span><span>Minha cidade tem história</span><span class="status">em breve</span></a>
+  <a class="mundo" style="background:#21409a" href="modulos/m2-mapas-caminhos-formas.html"><span class="num">2</span><span>Mapas, caminhos e formas</span><span class="status" data-status="m2">começar</span></a>
+  <a class="mundo bloqueado" style="background:#1f8a70" aria-disabled="true"><span class="num">3</span><span>Bichos do meu lugar</span><span class="status">em breve</span></a>
+  <a class="mundo bloqueado" style="background:#e4572e" aria-disabled="true"><span class="num">4</span><span>Sons, luzes, ritmos e versos</span><span class="status">em breve</span></a>
+  <a class="mundo bloqueado" style="background:#3a86ff" aria-disabled="true"><span class="num">5</span><span>Céu, solo e água</span><span class="status">em breve</span></a>
+  <a class="mundo bloqueado" style="background:#c77d00" aria-disabled="true"><span class="num">6</span><span>Do campo à mesa</span><span class="status">em breve</span></a>
+  <a class="mundo bloqueado" style="background:#5f6caf" aria-disabled="true"><span class="num">7</span><span>Praça, notícia e cidadania digital</span><span class="status">em breve</span></a>
+  <a class="mundo bloqueado" style="background:#b5179e" aria-disabled="true"><span class="num">8</span><span>Brincadeiras, palco e celebrações</span><span class="status">em breve</span></a>
+</div>
+
+<h2>Trilhas de todo dia</h2>
+<div class="mundos">
+  <a class="mundo trilha bloqueado" style="background:#264653" aria-disabled="true"><span>Oficina das palavras</span><span class="status">em breve</span></a>
+  <a class="mundo trilha bloqueado" style="background:#2a9d8f" aria-disabled="true"><span>Laboratório dos números</span><span class="status">em breve</span></a>
+  <a class="mundo trilha bloqueado" style="background:#6d597a" aria-disabled="true"><span>Ateliê do código</span><span class="status">em breve</span></a>
+</div>
+
+<script type="module">
+  import { progresso } from './assets/js/livro.js';
+  const p = progresso.ler('m2');
+  const n = Object.keys(p).length;
+  const el = document.querySelector('[data-status="m2"]');
+  if (el && n) el.textContent = `${n} atividades feitas`;
+</script>
+```
+
+::: {.content-visible when-profile="professor"}
+## Para o professor
+
+Esta é a versão do professor. Ela mostra, em cada módulo, os códigos da BNCC, o tempo sugerido, as orientações de cada etapa e as rubricas. A versão da criança tem o mesmo conteúdo, sem essas partes.
+
+O módulo M2 é o piloto. Os outros sete módulos e as três trilhas seguem o plano de distribuição das 203 habilidades do 3º ano (página Habilidades BNCC).
+:::

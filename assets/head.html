@@ -1,0 +1,25 @@
+<meta name="theme-color" content="#21409a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Livro 3º ano">
+<script>
+  // Caminho até a raiz do site, usado pelo manifesto, pelos ícones, pela fonte e pelo service worker.
+  (function () {
+    // O Quarto carrega site_libs/quarto-nav/quarto-nav.js com caminho relativo à página.
+    var nav = document.querySelector('script[src*="site_libs/quarto-nav/quarto-nav.js"]');
+    var base = (nav ? nav.getAttribute('src').split('site_libs/')[0] : '') || './';
+    window.LIVRO_BASE = base;
+    var l = document.createElement('link');
+    l.rel = 'manifest'; l.href = base + 'manifest.webmanifest';
+    document.head.appendChild(l);
+    var a = document.createElement('link');
+    a.rel = 'apple-touch-icon'; a.href = base + 'assets/icons/icon-192.png';
+    document.head.appendChild(a);
+    var f = document.createElement('style');
+    f.textContent = ['400', '700'].map(function (w) {
+      return '@font-face{font-family:Andika;font-weight:' + w + ';font-display:swap;src:url(' + base +
+        'assets/fonts/andika-latin-' + w + '-normal.woff2) format("woff2")}';
+    }).join('');
+    document.head.appendChild(f);
+  })();
+</script>

@@ -1,0 +1,156 @@
+/*-- scss:defaults --*/
+$azul: #21409a;
+$amarelo: #ffb703;
+$verde: #1f8a70;
+$coral: #e4572e;
+$papel: #fffaf0;
+$tinta: #1d2433;
+
+$primary: $azul;
+$success: $verde;
+$danger: $coral;
+$warning: $amarelo;
+$body-bg: $papel;
+$body-color: $tinta;
+$font-family-sans-serif: "Andika", "Atkinson Hyperlegible", system-ui, sans-serif;
+$headings-font-family: $font-family-sans-serif;
+$font-size-root: 18px;
+$line-height-base: 1.6;
+$link-color: $azul;
+$border-radius: 14px;
+$navbar-bg: $azul;
+
+/*-- scss:rules --*/
+/* A fonte Andika é declarada em assets/head.html, com caminho relativo à raiz do site. */
+
+:root {
+  --azul: #{$azul};
+  --amarelo: #{$amarelo};
+  --verde: #{$verde};
+  --coral: #{$coral};
+  --papel: #{$papel};
+  --toque: 48px; // área mínima de toque
+}
+
+body { -webkit-tap-highlight-color: transparent; }
+main.content { max-width: 960px; margin-inline: auto; }
+h1.title { font-size: clamp(1.8rem, 5vw, 2.6rem); color: $azul; }
+h2 { font-size: clamp(1.4rem, 4vw, 1.9rem); margin-top: 2.2rem; color: $azul; }
+.quarto-title-meta { display: none; }
+
+/* Botões grandes para dedos pequenos */
+.btn-livro, .livro button, .livro .opcao {
+  min-height: var(--toque);
+  min-width: var(--toque);
+  padding: .55rem 1.1rem;
+  border-radius: 14px;
+  border: 3px solid $azul;
+  background: #fff;
+  color: $azul;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+  &:active { transform: scale(.97); }
+  &:focus-visible { outline: 4px solid $amarelo; outline-offset: 2px; }
+  &.primario { background: $azul; color: #fff; }
+  &.certo { background: $verde; border-color: $verde; color: #fff; }
+  &.errado { background: $coral; border-color: $coral; color: #fff; }
+  &[disabled] { opacity: .5; }
+}
+
+/* Etapas do módulo */
+.etapa {
+  background: #fff;
+  border-radius: 22px;
+  padding: 1.2rem 1.2rem 1.4rem;
+  margin: 1.4rem 0;
+  box-shadow: 0 2px 0 rgba(0,0,0,.06);
+  border: 2px solid #f0e6d2;
+}
+.etapa-rotulo {
+  display: inline-block;
+  background: $amarelo;
+  color: $tinta;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: .15rem .8rem;
+  font-size: .85rem;
+  margin-bottom: .4rem;
+}
+.ouvir {
+  float: right;
+  margin-left: .5rem;
+}
+
+/* Mapa dos mundos (página inicial) */
+.mundos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+  margin: 1rem 0 2rem;
+}
+.mundo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+  border-radius: 22px;
+  padding: 14px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  &:hover { color: #fff; filter: brightness(1.05); }
+  .num { font-size: 2rem; opacity: .9; }
+  .status { font-size: .8rem; font-weight: 400; opacity: .9; }
+  &.bloqueado { filter: grayscale(.6) opacity(.75); pointer-events: none; }
+  &.trilha { min-height: 110px; }
+}
+
+/* Componentes interativos */
+.livro .opcoes { display: flex; flex-wrap: wrap; gap: 10px; margin: .6rem 0; }
+.livro .retorno { min-height: 1.6em; margin-top: .4rem; font-weight: 700; }
+.livro .retorno.certo { color: $verde; }
+.livro .retorno.errado { color: $coral; }
+.palco3d {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  max-height: 70vh;
+  background: linear-gradient(#e8f1ff, #fff);
+  border-radius: 18px;
+  touch-action: none;
+  display: block;
+}
+.controle { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: .6rem 0; }
+.controle input[type=range] { flex: 1; min-width: 180px; height: var(--toque); accent-color: $azul; }
+.contagem { display: flex; gap: 10px; flex-wrap: wrap; }
+.contagem span { background: #eef3ff; border-radius: 12px; padding: .3rem .7rem; }
+.grade-pares { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.cartao {
+  border: 3px solid #d9e2f5; border-radius: 16px; background: #fff;
+  min-height: 96px; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 4px; padding: 8px; font-weight: 700; cursor: pointer;
+  &.marcado { border-color: $amarelo; background: #fff6dc; }
+  &.feito { border-color: $verde; background: #e6f6f0; cursor: default; }
+  svg { width: 72px; height: 56px; }
+}
+.jogo-frame { width: 100%; border: 0; border-radius: 18px; height: min(92vh, 820px); background: #fff; }
+@media (orientation: landscape) and (min-width: 700px) {
+  .jogo-frame { height: min(90vh, 640px); }
+}
+.aviso-girar { display: none; }
+@media (orientation: portrait) and (max-width: 600px) {
+  .aviso-girar { display: block; font-size: .9rem; color: #555; }
+}
+
+/* Só professor */
+.bncc-tag {
+  display: inline-block; background: #eef3ff; border-left: 4px solid $azul;
+  padding: .2rem .5rem; margin: .15rem 0; font-size: .85rem; border-radius: 6px;
+}
+.bncc-tabela table { font-size: .85rem; }
+.rubrica table { font-size: .9rem; }
+.bncc-tabela td:nth-child(1), .bncc-tabela td:nth-child(2) { white-space: nowrap; }
+.bncc-tabela td:nth-child(3) { width: 60%; }
