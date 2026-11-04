@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meu Livro do 3º ano</title>
+<meta name="description" content="Livro digital interativo do 3º ano do ensino fundamental, alinhado à BNCC.">
+<meta name="theme-color" content="#21409a">
+<style>
+  :root { color-scheme: light; }
+  body {
+    margin: 0; padding: 2rem 1.25rem;
+    background: #fffaf0; color: #1b2a4a;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1.125rem; line-height: 1.6;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  main { max-width: 34rem; width: 100%; }
+  h1 { font-size: clamp(1.75rem, 6vw, 2.5rem); line-height: 1.2; margin: 0 0 .5rem; }
+  p.sub { margin: 0 0 2rem; color: #42506e; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+  a.porta {
+    display: block; min-height: 48px; padding: 1.25rem 1.5rem;
+    background: #fff; border: 3px solid #21409a; border-radius: 1rem;
+    color: #21409a; text-decoration: none; font-weight: 700;
+  }
+  a.porta span { display: block; font-weight: 400; font-size: 1rem; color: #42506e; margin-top: .25rem; }
+  a.porta:hover, a.porta:focus-visible { background: #eef2ff; }
+  a.porta:focus-visible { outline: 3px solid #d97706; outline-offset: 3px; }
+  footer { margin-top: 2.5rem; font-size: .95rem; color: #42506e; max-width: 34rem; }
+  footer a { color: #21409a; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Meu Livro do 3º ano</h1>
+  <p class="sub">Livro digital interativo, alinhado à BNCC. Escolha por onde entrar.</p>
+  <ul>
+    <li>
+      <a class="porta" href="aluno/">Sou criança
+        <span>O livro para ler, explorar e jogar. Dá para instalar no aparelho e usar sem internet.</span>
+      </a>
+    </li>
+    <li>
+      <a class="porta" href="professor/">Sou professor
+        <span>O mesmo conteúdo com os códigos da BNCC, orientações de cada etapa, rubricas e leitor de progresso.</span>
+      </a>
+    </li>
+  </ul>
+</main>
+<footer>
+  <p>Sem login, sem coleta de dados pessoais, sem rastreadores e sem publicidade. O progresso da criança fica no próprio aparelho.</p>
+</footer>
+</body>
+</html>

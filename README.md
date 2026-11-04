@@ -64,6 +64,18 @@ Conteúdo só do professor:
 - 3D só onde ensina algo que a imagem plana não ensina.
 - Imagens e sons próprios, Creative Commons ou domínio público.
 
+## Publicação
+
+O site vai para o GitHub Pages pelo workflow `.github/workflows/pages.yml`, a cada push na `main`. Ele compila os dois perfis e publica:
+
+| Caminho | Conteúdo |
+|---|---|
+| `/` | página de entrada, `pages/index.html` |
+| `/aluno/` | versão da criança, instalável |
+| `/professor/` | versão do professor |
+
+Para ligar: em Settings → Pages do repositório, escolha **GitHub Actions** como origem. Pages em repositório privado exige GitHub Pro; num repositório público funciona no plano gratuito.
+
 ## Licenças de terceiros
 
 - three.js, MIT (`assets/vendor/three/LICENSE`)
